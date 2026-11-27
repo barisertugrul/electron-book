@@ -1,0 +1,36 @@
+{
+  "name": "hizli-not",
+  "productName": "Hızlı Not",
+  "version": "1.0.0",
+  "description": "Markdown önizlemeli sade not defteri (Bölüm 9)",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "node --test",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "ERT Yazılım",
+  "license": "MIT",
+  "dependencies": {
+    "marked": "^18.0.4"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
+    "electron": "^45.5.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "asar": true
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip"
+        }
+      ]
+    }
+  }
+}

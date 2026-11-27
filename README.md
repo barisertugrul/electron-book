@@ -6,7 +6,7 @@ Bu depo, kitaptaki tüm örnek kodları ve gerçek hayat projelerini içerir. Ko
 
 | Bölüm | Proje | Arayüz |
 | --- | --- | --- |
-| 9 | Hızlı Not | HTML/CSS |
+| 9 | [Hızlı Not](bolum-09-hizli-not/) | HTML/CSS |
 | 10 | Odak Zamanlayıcı | HTML/CSS |
 | 11 | Toplu Fotoğraf Düzenleyici | HTML/CSS |
 | 12 | Kişisel Bütçe Takibi | React |
