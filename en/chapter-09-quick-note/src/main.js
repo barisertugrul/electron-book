@@ -112,10 +112,10 @@ function buildMenu() {
           click: () => sendMenuCommand('save-as'),
         },
         { type: 'separator' },
-        isMac ? { role: 'close' } : { role: 'quit' },
+        isMac ? { role: 'close', label: 'Close' } : { role: 'quit', label: 'Quit' },
       ],
     },
-    { role: 'editMenu' },
+    { role: 'editMenu', label: 'Edit' },
     {
       label: 'View',
       submenu: [
@@ -125,11 +125,11 @@ function buildMenu() {
           click: () => sendMenuCommand('toggle-preview'),
         },
         { type: 'separator' },
-        { role: 'resetZoom' },
-        { role: 'zoomIn' },
-        { role: 'zoomOut' },
+        { role: 'resetZoom', label: 'Actual Size' },
+        { role: 'zoomIn', label: 'Zoom In' },
+        { role: 'zoomOut', label: 'Zoom Out' },
         { type: 'separator' },
-        { role: 'toggleDevTools' },
+        { role: 'toggleDevTools', label: 'Toggle Developer Tools' },
       ],
     },
   ];
