@@ -9,6 +9,7 @@ Türkçe baskının kodları `tr/`, İngilizce baskınınki `en/` klasöründedi
 | Bölüm | Proje | Arayüz |
 | --- | --- | --- |
 | 9 | [Hızlı Not](tr/bolum-09-hizli-not/) | HTML/CSS |
+| 10 | [Odak Zamanlayıcı](tr/bolum-10-odak-zamanlayici/) | HTML/CSS |
 | 10 | Odak Zamanlayıcı | HTML/CSS |
 | 11 | Toplu Fotoğraf Düzenleyici | HTML/CSS |
 | 12 | Kişisel Bütçe Takibi | React |
@@ -30,6 +31,7 @@ Code for the Turkish edition is in `tr/`, and for the English edition in `en/`. 
 | Chapter | Project | UI |
 | --- | --- | --- |
 | 9 | [Quick Note](en/chapter-09-quick-note/) | HTML/CSS |
+| 10 | [Focus Timer](en/chapter-10-focus-timer/) | HTML/CSS |
 | 10 | Focus Timer | HTML/CSS |
 | 11 | Batch Photo Editor | HTML/CSS |
 | 12 | Personal Budget Tracker | React |

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Günlük özet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <section class="summary">
+      <h1 class="summary-title">Bugün</h1>
+      <div class="cards">
+        <div class="card">
+          <span id="today-sessions" class="card-value">0</span>
+          <span class="card-label">odak oturumu</span>
+        </div>
+        <div class="card">
+          <span id="today-minutes" class="card-value">0</span>
+          <span class="card-label">dakika odak</span>
+        </div>
+      </div>
+
+      <h2 class="summary-subtitle">Son 7 gün <span id="week-total" class="muted"></span></h2>
+      <!-- Sütunlar summary.js tarafından eklenir. -->
+      <div id="chart" class="chart" role="img" aria-label="Son 7 günün odak dakikaları"></div>
+
+      <div class="form-actions">
+        <button id="btn-close" type="button">Kapat</button>
+      </div>
+    </section>
+
+    <script type="module" src="summary.js"></script>
+  </body>
+</html>

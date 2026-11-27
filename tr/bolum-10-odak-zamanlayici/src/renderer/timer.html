@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Odak Zamanlayıcı</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="timer-page" data-phase="focus">
+    <!-- Çerçevesiz pencerede başlık çubuğu yok. Bu şerit, pencereyi
+         sürüklemek için tutulacak yer (CSS: -webkit-app-region: drag). -->
+    <header class="titlebar">
+      <span id="phase-label" class="phase-pill">Odak</span>
+      <div class="titlebar-buttons">
+        <button id="btn-summary" class="icon-button" type="button" title="Günlük özet" aria-label="Günlük özet">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 14V8h3v6zm4.5 0V3h3v11zM11 14V6h3v8z" /></svg>
+        </button>
+        <button id="btn-settings" class="icon-button" type="button" title="Ayarlar" aria-label="Ayarlar">
+          <svg viewBox="0 0 16 16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M8 5.5A2.5 2.5 0 1 0 8 10.5 2.5 2.5 0 0 0 8 5.5zm6.3 1.4-1.4-.3a5 5 0 0 0-.5-1.2l.8-1.2-1.4-1.4-1.2.8a5 5 0 0 0-1.2-.5L9.1 1.7H6.9l-.3 1.4a5 5 0 0 0-1.2.5l-1.2-.8-1.4 1.4.8 1.2a5 5 0 0 0-.5 1.2l-1.4.3v2.2l1.4.3c.1.4.3.8.5 1.2l-.8 1.2 1.4 1.4 1.2-.8c.4.2.8.4 1.2.5l.3 1.4h2.2l.3-1.4c.4-.1.8-.3 1.2-.5l1.2.8 1.4-1.4-.8-1.2c.2-.4.4-.8.5-1.2l1.4-.3z" />
+          </svg>
+        </button>
+        <button id="btn-hide" class="icon-button" type="button" title="Gizle (tepside çalışmaya devam eder)" aria-label="Gizle">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" /></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="timer-body">
+      <!-- İlerleme halkası: kalan süre azaldıkça halka kısalır. -->
+      <div class="ring">
+        <svg viewBox="0 0 132 132" aria-hidden="true">
+          <circle class="ring-track" cx="66" cy="66" r="58" />
+          <circle id="ring-progress" class="ring-progress" cx="66" cy="66" r="58" />
+        </svg>
+        <div id="time" class="time">25:00</div>
+      </div>
+
+      <div class="controls">
+        <div class="round" title="Bu turda biten odak oturumları">
+          <span class="round-label">Tur</span>
+          <span id="dots" class="dots"></span>
+        </div>
+        <button id="btn-toggle" class="primary" type="button" title="Başlat / Duraklat (Ctrl+Alt+P)">Başlat</button>
+        <div class="button-row">
+          <button id="btn-reset" type="button" title="Bu aşamayı baştan başlat">Sıfırla</button>
+          <button id="btn-skip" type="button" title="Sonraki aşamaya geç">Atla</button>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="timer-window.js"></script>
+  </body>
+</html>

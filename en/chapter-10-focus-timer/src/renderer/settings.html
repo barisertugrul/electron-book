@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <form id="settings-form" class="settings" novalidate>
+      <fieldset>
+        <legend>Durations (minutes)</legend>
+        <label class="field">
+          <span>Focus</span>
+          <input name="focusMinutes" type="number" min="1" max="120" required />
+        </label>
+        <label class="field">
+          <span>Short break</span>
+          <input name="shortBreakMinutes" type="number" min="1" max="30" required />
+        </label>
+        <label class="field">
+          <span>Long break</span>
+          <input name="longBreakMinutes" type="number" min="1" max="60" required />
+        </label>
+        <label class="field">
+          <span>Focus sessions before a long break</span>
+          <input name="sessionsBeforeLongBreak" type="number" min="2" max="8" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Behavior</legend>
+        <label class="check">
+          <input name="autoStartNext" type="checkbox" />
+          <span>Start the next phase automatically</span>
+        </label>
+        <label class="check">
+          <input name="alwaysOnTop" type="checkbox" />
+          <span>Keep the timer on top of other windows</span>
+        </label>
+        <label class="check">
+          <input name="openAtLogin" type="checkbox" />
+          <span>Start when the computer starts</span>
+        </label>
+      </fieldset>
+
+      <p class="hint">
+        Global shortcut: <kbd id="shortcut">Ctrl+Alt+P</kbd> starts/pauses from anywhere.
+        <span id="shortcut-warning" class="warning" hidden>Another application is using this shortcut.</span>
+      </p>
+
+      <div class="form-actions">
+        <span id="status" class="status" role="status"></span>
+        <button id="btn-close" type="button">Close</button>
+        <button class="primary" type="submit">Save</button>
+      </div>
+    </form>
+
+    <script type="module" src="settings.js"></script>
+  </body>
+</html>

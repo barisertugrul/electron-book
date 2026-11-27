@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Ayarlar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <form id="settings-form" class="settings" novalidate>
+      <fieldset>
+        <legend>Süreler (dakika)</legend>
+        <label class="field">
+          <span>Odak</span>
+          <input name="focusMinutes" type="number" min="1" max="120" required />
+        </label>
+        <label class="field">
+          <span>Kısa mola</span>
+          <input name="shortBreakMinutes" type="number" min="1" max="30" required />
+        </label>
+        <label class="field">
+          <span>Uzun mola</span>
+          <input name="longBreakMinutes" type="number" min="1" max="60" required />
+        </label>
+        <label class="field">
+          <span>Uzun moladan önceki odak sayısı</span>
+          <input name="sessionsBeforeLongBreak" type="number" min="2" max="8" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Davranış</legend>
+        <label class="check">
+          <input name="autoStartNext" type="checkbox" />
+          <span>Aşama bitince sonrakini otomatik başlat</span>
+        </label>
+        <label class="check">
+          <input name="alwaysOnTop" type="checkbox" />
+          <span>Zamanlayıcı her zaman üstte dursun</span>
+        </label>
+        <label class="check">
+          <input name="openAtLogin" type="checkbox" />
+          <span>Bilgisayar açılınca başlat</span>
+        </label>
+      </fieldset>
+
+      <p class="hint">
+        Genel kısayol: <kbd id="shortcut">Ctrl+Alt+P</kbd> ile her yerden başlat/duraklat.
+        <span id="shortcut-warning" class="warning" hidden>Bu kısayolu başka bir uygulama kullanıyor.</span>
+      </p>
+
+      <div class="form-actions">
+        <span id="status" class="status" role="status"></span>
+        <button id="btn-close" type="button">Kapat</button>
+        <button class="primary" type="submit">Kaydet</button>
+      </div>
+    </form>
+
+    <script type="module" src="settings.js"></script>
+  </body>
+</html>
