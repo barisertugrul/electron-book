@@ -1,0 +1,238 @@
+/* style.css — Quick Note user interface.
+   Colors are defined as variables; for the dark theme we only need to
+   change the variables (Chapter 7, light/dark theme). */
+
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --border: #e2e2de;
+  --text: #1f2328;
+  --muted: #6b6f76;
+  --accent: #2f6feb;
+  --accent-text: #ffffff;
+  --warning: #b35900;
+  --code-bg: #f0f0ec;
+  --radius: 8px;
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17181b;
+    --surface: #1f2125;
+    --border: #2f3237;
+    --text: #e6e6e3;
+    --muted: #9a9ea6;
+    --accent: #4c8dff;
+    --warning: #f0a04b;
+    --code-bg: #2a2d32;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+}
+
+/* --- Toolbar --------------------------------------------------------- */
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--muted);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+button.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+button.toggle[aria-pressed='true'] {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* --- Workspace: editor + preview ------------------------------- */
+
+.workspace {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 12px;
+  min-height: 0; /* Show the scrollbar inside the pane when content overflows. */
+}
+
+.workspace.single {
+  grid-template-columns: 1fr;
+}
+
+.pane {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.pane[hidden] {
+  display: none;
+}
+
+.pane-title {
+  margin: 0;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.editor {
+  flex: 1;
+  width: 100%;
+  padding: 14px 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--text);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, 'SF Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.preview {
+  flex: 1;
+  padding: 6px 22px 22px;
+  overflow-y: auto;
+  line-height: 1.65;
+}
+
+/* Markdown elements in the preview */
+.preview h1,
+.preview h2,
+.preview h3 {
+  line-height: 1.25;
+  margin: 1.1em 0 0.5em;
+}
+
+.preview h1 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+.preview a {
+  color: var(--accent);
+}
+
+.preview code {
+  padding: 0.15em 0.35em;
+  border-radius: 4px;
+  background: var(--code-bg);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.92em;
+}
+
+.preview pre {
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  background: var(--code-bg);
+  overflow-x: auto;
+}
+
+.preview pre code {
+  padding: 0;
+  background: none;
+}
+
+.preview blockquote {
+  margin: 1em 0;
+  padding: 0.2em 1em;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+.preview table {
+  border-collapse: collapse;
+}
+
+.preview th,
+.preview td {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+}
+
+/* --- Status bar ---------------------------------------------------------- */
+
+.statusbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 14px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.statusbar .spacer {
+  flex: 1;
+}
+
+.dirty-badge {
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  color: var(--warning);
+}
+
+.dirty-badge[hidden] {
+  display: none;
+}

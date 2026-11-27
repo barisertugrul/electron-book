@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Content Security Policy (Chapter 6): scripts and styles load only
+         from our own files; inline scripts do not run. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Quick Note</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="toolbar-group">
+        <button id="btn-new" type="button" title="New note (Ctrl+N)">New</button>
+        <button id="btn-open" type="button" title="Open note (Ctrl+O)">Open</button>
+        <button id="btn-save" type="button" class="primary" title="Save (Ctrl+S)">Save</button>
+      </div>
+      <div class="toolbar-group">
+        <button
+          id="btn-preview"
+          type="button"
+          class="toggle"
+          aria-pressed="true"
+          title="Toggle preview (Ctrl+E)"
+        >
+          Preview
+        </button>
+      </div>
+    </header>
+
+    <main id="workspace" class="workspace">
+      <section class="pane">
+        <h2 class="pane-title">Editor</h2>
+        <textarea
+          id="editor"
+          class="editor"
+          spellcheck="false"
+          placeholder="Write your note here. You can use Markdown: # Heading, **bold**, - list…"
+        ></textarea>
+      </section>
+
+      <section id="preview-pane" class="pane">
+        <h2 class="pane-title">Preview</h2>
+        <article id="preview" class="preview"></article>
+      </section>
+    </main>
+
+    <footer class="statusbar">
+      <span id="file-name">Untitled</span>
+      <span id="dirty-badge" class="dirty-badge" hidden>Unsaved</span>
+      <span class="spacer"></span>
+      <span id="stats">0 words · 0 characters</span>
+    </footer>
+
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>
