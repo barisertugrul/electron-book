@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Daily summary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page">
+    <section class="summary">
+      <h1 class="summary-title">Today</h1>
+      <div class="cards">
+        <div class="card">
+          <span id="today-sessions" class="card-value">0</span>
+          <span class="card-label">focus sessions</span>
+        </div>
+        <div class="card">
+          <span id="today-minutes" class="card-value">0</span>
+          <span class="card-label">minutes of focus</span>
+        </div>
+      </div>
+
+      <h2 class="summary-subtitle">Last 7 days <span id="week-total" class="muted"></span></h2>
+      <!-- summary.js adds the columns. -->
+      <div id="chart" class="chart" role="img" aria-label="Focus minutes in the last 7 days"></div>
+
+      <div class="form-actions">
+        <button id="btn-close" type="button">Close</button>
+      </div>
+    </section>
+
+    <script type="module" src="summary.js"></script>
+  </body>
+</html>
