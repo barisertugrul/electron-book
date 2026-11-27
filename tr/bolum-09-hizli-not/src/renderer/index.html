@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- İçerik Güvenlik Politikası (Bölüm 6): sadece kendi dosyalarımızdan
+         betik ve stil yüklenir; satır içi betik çalışmaz. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Hızlı Not</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="toolbar">
+      <div class="toolbar-group">
+        <button id="btn-new" type="button" title="Yeni not (Ctrl+N)">Yeni</button>
+        <button id="btn-open" type="button" title="Not aç (Ctrl+O)">Aç</button>
+        <button id="btn-save" type="button" class="primary" title="Kaydet (Ctrl+S)">Kaydet</button>
+      </div>
+      <div class="toolbar-group">
+        <button
+          id="btn-preview"
+          type="button"
+          class="toggle"
+          aria-pressed="true"
+          title="Önizlemeyi aç/kapat (Ctrl+E)"
+        >
+          Önizleme
+        </button>
+      </div>
+    </header>
+
+    <main id="workspace" class="workspace">
+      <section class="pane">
+        <h2 class="pane-title">Düzenleyici</h2>
+        <textarea
+          id="editor"
+          class="editor"
+          spellcheck="false"
+          placeholder="Notunuzu buraya yazın. Markdown kullanabilirsiniz: # Başlık, **kalın**, - liste…"
+        ></textarea>
+      </section>
+
+      <section id="preview-pane" class="pane">
+        <h2 class="pane-title">Önizleme</h2>
+        <article id="preview" class="preview"></article>
+      </section>
+    </main>
+
+    <footer class="statusbar">
+      <span id="file-name">Adsız</span>
+      <span id="dirty-badge" class="dirty-badge" hidden>Kaydedilmedi</span>
+      <span class="spacer"></span>
+      <span id="stats">0 kelime · 0 karakter</span>
+    </footer>
+
+    <script type="module" src="renderer.js"></script>
+  </body>
+</html>
