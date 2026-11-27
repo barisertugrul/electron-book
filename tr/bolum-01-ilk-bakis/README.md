@@ -9,10 +9,3 @@ npm start
 ```
 
 Electron 45.5.0 ile yazılmıştır.
-
----
-
-# Chapter 1 — A First Look at Electron
-
-The smallest example: opens a window and prints the Electron, Chromium and Node.js versions to the terminal.
-Setup is covered in Chapter 2. If Node.js is installed you can try it now with `npm install` and `npm start`.
