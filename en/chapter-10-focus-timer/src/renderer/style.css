@@ -33,6 +33,11 @@
   box-sizing: border-box;
 }
 
+/* The hidden attribute always hides; the display rules below must not override it. */
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   height: 100%;

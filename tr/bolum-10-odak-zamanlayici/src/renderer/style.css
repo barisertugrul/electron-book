@@ -33,6 +33,11 @@
   box-sizing: border-box;
 }
 
+/* hidden niteliği her zaman gizlesin; aşağıdaki display kuralları onu ezmesin. */
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   height: 100%;
