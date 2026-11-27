@@ -1,0 +1,13 @@
+{
+  "name": "first-look",
+  "version": "1.0.0",
+  "description": "Chapter 1: A first look at Electron. Opens a window and prints version info.",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^45.5.0"
+  }
+}
