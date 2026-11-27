@@ -1,12 +1,12 @@
-// renderer.js — Hızlı Not'un arayüz kodu (işleyici süreç).
+// renderer.js — The user interface code of Quick Note (renderer process).
 //
-// Bu dosya sıradan bir web sayfası betiğidir: Node.js yoktur, dosya sistemine
-// erişemez. Dış dünyayla tek bağlantısı preload.cjs'in açtığı window.hizliNot
-// nesnesidir.
+// This file is an ordinary web page script: it has no Node.js and cannot
+// access the file system. Its only link to the outside world is the
+// window.quickNote object exposed by preload.cjs.
 
-const api = window.hizliNot;
+const api = window.quickNote;
 
-// Sayfadaki öğeler (Köşe Taşı 7: DOM seçimi)
+// Elements on the page (JS Cornerstone 7: selecting DOM elements)
 const editor = document.querySelector('#editor');
 const preview = document.querySelector('#preview');
 const previewPane = document.querySelector('#preview-pane');
@@ -19,13 +19,13 @@ const previewButton = document.querySelector('#btn-preview');
 let isDirty = false;
 
 // ---------------------------------------------------------------------------
-// Durum göstergeleri
+// Status indicators
 // ---------------------------------------------------------------------------
 
 function setDirty(value) {
   isDirty = value;
   dirtyBadge.hidden = !value;
-  api.setDirty(value); // Ana süreç pencere başlığını günceller.
+  api.setDirty(value); // The main process updates the window title.
 }
 
 function setFileName(name) {
@@ -35,20 +35,20 @@ function setFileName(name) {
 function updateStats() {
   const text = editor.value;
   const words = text.trim() === '' ? 0 : text.trim().split(/\s+/).length;
-  stats.textContent = `${words} kelime · ${text.length} karakter`;
+  stats.textContent = `${words} words · ${text.length} characters`;
 }
 
 // ---------------------------------------------------------------------------
-// Önizleme
+// Preview
 // ---------------------------------------------------------------------------
 
 async function renderPreview() {
-  // HTML'i ana süreç üretir. Ham HTML ve tehlikeli bağlantılar orada
-  // temizlendiği için sonucu innerHTML ile koymak güvenlidir (Bölüm 6).
+  // The main process produces the HTML. Raw HTML and dangerous links are
+  // cleaned there, so putting the result in innerHTML is safe (Chapter 6).
   preview.innerHTML = await api.renderMarkdown(editor.value);
 }
 
-// Her tuşta değil, yazmaya 150 ms ara verilince önizlemeyi yenile.
+// Refresh the preview after a 150 ms pause in typing, not on every key.
 let previewTimer;
 function schedulePreview() {
   clearTimeout(previewTimer);
@@ -64,7 +64,7 @@ function togglePreview() {
 }
 
 // ---------------------------------------------------------------------------
-// Dosya komutları
+// File commands
 // ---------------------------------------------------------------------------
 
 function showDocument(fileName, content) {
@@ -76,15 +76,15 @@ function showDocument(fileName, content) {
   editor.focus();
 }
 
-// Kaydedilmemiş değişiklik varsa kullanıcıya sorar.
-// true dönerse işleme devam edilebilir (yeni, aç, kapat).
+// Asks the user if there are unsaved changes.
+// If it returns true, the action can continue (new, open, close).
 async function continueIfSafe() {
   if (!isDirty) return true;
 
   const choice = await api.confirmUnsaved();
   if (choice === 'cancel') return false;
   if (choice === 'save') return save();
-  return true; // 'discard': kaydetmeden devam
+  return true; // 'discard': continue without saving
 }
 
 async function newFile() {
@@ -99,14 +99,14 @@ async function openFile() {
   if (result) showDocument(result.fileName, result.content);
 }
 
-// Kaydedildiyse true, kullanıcı vazgeçtiyse veya hata olduysa false döner.
+// Returns true if saved, false if the user cancelled or an error occurred.
 async function save({ askForPath = false } = {}) {
   const content = editor.value;
   const result = askForPath ? await api.saveFileAs(content) : await api.saveFile(content);
   if (!result) return false;
 
   setFileName(result.fileName);
-  // Kaydederken kullanıcı yazmaya devam ettiyse değişiklik hâlâ vardır.
+  // If the user kept typing while saving, there are still changes.
   setDirty(editor.value !== content);
   return true;
 }
@@ -120,17 +120,17 @@ const commands = {
 };
 
 // ---------------------------------------------------------------------------
-// Olaylar (Köşe Taşı 3)
+// Events (JS Cornerstone 3)
 // ---------------------------------------------------------------------------
 
 editor.addEventListener('input', () => {
-  // Sadece ilk değişiklikte bildir; her tuşta ana süreci rahatsız etmeyelim.
+  // Notify only on the first change; don't bother the main process on every key.
   if (!isDirty) setDirty(true);
   updateStats();
   schedulePreview();
 });
 
-// Tab tuşu odaktan çıkmak yerine iki boşluk eklesin.
+// Make the Tab key insert two spaces instead of moving the focus.
 editor.addEventListener('keydown', (event) => {
   if (event.key !== 'Tab') return;
   event.preventDefault();
@@ -143,15 +143,15 @@ document.querySelector('#btn-open').addEventListener('click', commands.open);
 document.querySelector('#btn-save').addEventListener('click', commands.save);
 previewButton.addEventListener('click', commands['toggle-preview']);
 
-// Menüden gelen komutlar
+// Commands coming from the menu
 api.onMenuCommand((command) => commands[command]?.());
 
-// Pencere kapatılmak istendiğinde (yalnızca kaydedilmemiş değişiklik varsa gelir)
+// When the window is about to close (only sent if there are unsaved changes)
 api.onCloseRequested(async () => {
   if (await continueIfSafe()) api.closeWindow();
 });
 
-// Başlangıç
+// Startup
 updateStats();
 renderPreview();
 editor.focus();

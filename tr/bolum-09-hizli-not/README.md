@@ -32,7 +32,7 @@ npm test
 | Dosya | Süreç | Görevi |
 | --- | --- | --- |
 | `src/main.js` | Ana süreç | Pencere, menü, dosya diyalogları, diske okuma/yazma, IPC kanalları |
-| `src/preload.cjs` | Preload | `window.hizliNot` köprüsü (`contextBridge`) |
+| `src/preload.cjs` | Preload | `window.quickNote` köprüsü (`contextBridge`) |
 | `src/markdown.js` | Ana süreç | Markdown'ı güvenli HTML'e çevirir (`marked`) |
 | `src/document.js` | Ana süreç | Pencere başlığı ve dosya adı yardımcıları |
 | `src/renderer/` | İşleyici | Arayüz: `index.html`, `style.css`, `renderer.js` |

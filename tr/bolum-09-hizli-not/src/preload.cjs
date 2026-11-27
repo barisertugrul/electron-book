@@ -9,7 +9,7 @@
 
 const { contextBridge, ipcRenderer } = require('electron');
 
-contextBridge.exposeInMainWorld('hizliNot', {
+contextBridge.exposeInMainWorld('quickNote', {
   // İstek-yanıt (invoke/handle): her biri bir Promise döndürür.
   newFile: () => ipcRenderer.invoke('file:new'),
   openFile: () => ipcRenderer.invoke('file:open'),
