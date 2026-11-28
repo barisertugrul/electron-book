@@ -1,0 +1,237 @@
+﻿Date,Type,Category,Amount,Note
+2026-01-01,Income,Salary,4500.00,Monthly salary
+2026-01-02,Expense,Groceries,304.69,Farmers market
+2026-01-03,Expense,Rent,1500.00,Rent
+2026-01-04,Expense,Transport,93.94,Taxi
+2026-01-05,Expense,Eating out,95.73,Dinner out
+2026-01-08,Expense,Fun,28.05,Concert tickets
+2026-01-09,Expense,Groceries,275.56,Farmers market
+2026-01-10,Expense,Bills,165.70,Electricity
+2026-01-11,Expense,Eating out,57.87,Coffee
+2026-01-12,Expense,Bills,48.00,Water
+2026-01-13,Expense,Transport,62.57,Transit card top-up
+2026-01-15,Expense,Bills,54.99,Internet
+2026-01-16,Expense,Groceries,233.80,Weekly groceries
+2026-01-17,Expense,Eating out,94.95,Lunch with colleagues
+2026-01-20,Expense,Bills,38.90,Phone
+2026-01-21,Expense,Fun,65.47,Cinema
+2026-01-22,Expense,Transport,39.41,Taxi
+2026-01-23,Expense,Groceries,148.83,Weekly groceries
+2026-01-23,Expense,Eating out,87.78,Dinner out
+2026-01-25,Expense,Other,88.12,Haircut
+2026-01-30,Expense,Groceries,191.73,Bakery
+2026-02-01,Income,Salary,4500.00,Monthly salary
+2026-02-02,Expense,Groceries,140.50,Farmers market
+2026-02-03,Expense,Rent,1500.00,Rent
+2026-02-04,Expense,Transport,105.23,Fuel
+2026-02-05,Expense,Eating out,16.67,Coffee
+2026-02-08,Expense,Fun,60.93,Streaming subscription
+2026-02-09,Expense,Groceries,239.93,Farmers market
+2026-02-10,Expense,Bills,125.28,Electricity
+2026-02-11,Expense,Eating out,17.44,Lunch with colleagues
+2026-02-12,Expense,Bills,47.92,Water
+2026-02-13,Expense,Transport,112.60,Transit card top-up
+2026-02-15,Expense,Bills,54.99,Internet
+2026-02-16,Expense,Groceries,266.36,Bakery
+2026-02-17,Expense,Eating out,104.02,Lunch with colleagues
+2026-02-20,Expense,Bills,38.90,Phone
+2026-02-21,Expense,Fun,62.55,Book
+2026-02-22,Expense,Transport,106.18,Transit card top-up
+2026-02-23,Expense,Groceries,286.30,Weekly groceries
+2026-02-23,Expense,Eating out,45.92,Pizza night
+2026-02-25,Expense,Other,58.68,Gift
+2026-03-01,Income,Salary,4500.00,Monthly salary
+2026-03-02,Expense,Groceries,286.55,Weekly groceries
+2026-03-03,Expense,Rent,1500.00,Rent
+2026-03-04,Expense,Transport,64.17,Fuel
+2026-03-05,Expense,Eating out,56.06,Dinner out
+2026-03-08,Expense,Fun,43.05,Book
+2026-03-09,Expense,Groceries,215.97,Weekly groceries
+2026-03-10,Expense,Bills,216.89,Electricity
+2026-03-11,Expense,Eating out,31.24,Pizza night
+2026-03-12,Expense,Bills,40.98,Water
+2026-03-13,Expense,Transport,86.67,Fuel
+2026-03-15,Expense,Bills,54.99,Internet
+2026-03-16,Expense,Groceries,144.67,Weekly groceries
+2026-03-17,Expense,Eating out,65.34,Dinner out
+2026-03-18,Income,Side income,850.04,Freelance work
+2026-03-20,Expense,Bills,38.90,Phone
+2026-03-21,Expense,Fun,40.25,Streaming subscription
+2026-03-22,Expense,Transport,32.03,Taxi
+2026-03-22,Expense,Health,50.48,Pharmacy
+2026-03-23,Expense,Groceries,204.02,Farmers market
+2026-03-23,Expense,Eating out,74.73,Coffee
+2026-03-30,Expense,Groceries,318.96,Supermarket
+2026-04-01,Income,Salary,4500.00,Monthly salary
+2026-04-02,Expense,Groceries,311.60,Farmers market
+2026-04-03,Expense,Rent,1500.00,Rent
+2026-04-04,Expense,Transport,108.03,Fuel
+2026-04-05,Expense,Eating out,47.55,Pizza night
+2026-04-08,Expense,Fun,62.68,Book
+2026-04-09,Expense,Groceries,247.16,Weekly groceries
+2026-04-10,Expense,Bills,113.83,Electricity
+2026-04-11,Expense,Eating out,63.26,Lunch with colleagues
+2026-04-12,Expense,Bills,37.46,Water
+2026-04-13,Expense,Transport,41.53,Fuel
+2026-04-15,Expense,Bills,54.99,Internet
+2026-04-16,Expense,Groceries,157.28,Bakery
+2026-04-17,Expense,Eating out,23.63,Pizza night
+2026-04-20,Expense,Bills,38.90,Phone
+2026-04-21,Expense,Fun,56.65,Concert tickets
+2026-04-22,Expense,Transport,36.09,Taxi
+2026-04-22,Expense,Health,143.32,Dentist
+2026-04-23,Expense,Groceries,260.51,Supermarket
+2026-04-23,Expense,Eating out,57.58,Dinner out
+2026-04-25,Expense,Other,53.97,Gift
+2026-04-30,Expense,Groceries,280.46,Farmers market
+2026-05-01,Income,Salary,4500.00,Monthly salary
+2026-05-02,Expense,Groceries,318.34,Farmers market
+2026-05-03,Expense,Rent,1500.00,Rent
+2026-05-04,Expense,Transport,99.08,Fuel
+2026-05-05,Expense,Eating out,18.02,Lunch with colleagues
+2026-05-08,Expense,Fun,77.27,Cinema
+2026-05-09,Expense,Groceries,181.61,Farmers market
+2026-05-10,Expense,Bills,93.74,Electricity
+2026-05-11,Expense,Eating out,32.15,Coffee
+2026-05-12,Expense,Bills,43.29,Water
+2026-05-13,Expense,Transport,51.73,Taxi
+2026-05-15,Expense,Bills,54.99,Internet
+2026-05-16,Expense,Groceries,191.89,Farmers market
+2026-05-17,Expense,Eating out,37.92,Dinner out
+2026-05-20,Expense,Bills,38.90,Phone
+2026-05-21,Expense,Fun,81.18,Cinema
+2026-05-22,Expense,Transport,114.54,Transit card top-up
+2026-05-22,Expense,Health,64.47,Pharmacy
+2026-05-23,Expense,Groceries,299.32,Supermarket
+2026-05-23,Expense,Eating out,39.88,Lunch with colleagues
+2026-05-30,Expense,Groceries,151.55,Farmers market
+2026-06-01,Income,Salary,4500.00,Monthly salary
+2026-06-02,Expense,Groceries,208.24,Farmers market
+2026-06-03,Expense,Rent,1500.00,Rent
+2026-06-04,Expense,Transport,112.33,Fuel
+2026-06-05,Expense,Eating out,69.40,Dinner out
+2026-06-08,Expense,Fun,62.97,Streaming subscription
+2026-06-09,Expense,Groceries,216.81,Farmers market
+2026-06-10,Expense,Bills,121.15,Electricity
+2026-06-11,Expense,Eating out,93.24,Dinner out
+2026-06-12,Expense,Bills,42.95,Water
+2026-06-13,Expense,Transport,34.88,Transit card top-up
+2026-06-15,Expense,Bills,54.99,Internet
+2026-06-16,Expense,Groceries,269.80,Farmers market
+2026-06-17,Expense,Eating out,97.33,Lunch with colleagues
+2026-06-18,Income,Side income,496.81,Freelance work
+2026-06-20,Expense,Bills,38.90,Phone
+2026-06-21,Expense,Fun,67.23,Book
+2026-06-22,Expense,Transport,110.15,Fuel
+2026-06-22,Expense,Health,81.48,Dentist
+2026-06-23,Expense,Groceries,213.88,Supermarket
+2026-06-23,Expense,Eating out,52.45,Coffee
+2026-06-25,Expense,Other,127.55,Haircut
+2026-06-30,Expense,Groceries,248.85,Bakery
+2026-07-01,Income,Salary,5200.00,Monthly salary
+2026-07-02,Expense,Groceries,170.22,Weekly groceries
+2026-07-03,Expense,Rent,1750.00,Rent
+2026-07-04,Expense,Transport,43.11,Taxi
+2026-07-05,Expense,Eating out,51.21,Pizza night
+2026-07-08,Expense,Fun,72.23,Book
+2026-07-09,Expense,Groceries,173.43,Farmers market
+2026-07-10,Expense,Bills,102.29,Electricity
+2026-07-11,Expense,Eating out,93.39,Pizza night
+2026-07-12,Expense,Bills,39.07,Water
+2026-07-13,Expense,Transport,97.27,Fuel
+2026-07-15,Expense,Bills,54.99,Internet
+2026-07-16,Expense,Groceries,153.72,Weekly groceries
+2026-07-17,Expense,Eating out,53.88,Lunch with colleagues
+2026-07-20,Expense,Bills,38.90,Phone
+2026-07-21,Expense,Fun,47.29,Cinema
+2026-07-22,Expense,Transport,64.24,Taxi
+2026-07-22,Expense,Health,87.60,Pharmacy
+2026-07-23,Expense,Groceries,263.61,Weekly groceries
+2026-07-23,Expense,Eating out,19.27,Lunch with colleagues
+2026-07-25,Expense,Other,77.48,Haircut
+2026-07-30,Expense,Groceries,171.41,Weekly groceries
+2026-08-01,Income,Salary,5200.00,Monthly salary
+2026-08-02,Expense,Groceries,293.44,Supermarket
+2026-08-03,Expense,Rent,1750.00,Rent
+2026-08-04,Expense,Transport,82.25,Taxi
+2026-08-05,Expense,Eating out,43.60,Coffee
+2026-08-08,Expense,Fun,27.46,Book
+2026-08-09,Expense,Groceries,298.24,Weekly groceries
+2026-08-10,Expense,Bills,96.52,Electricity
+2026-08-11,Expense,Eating out,33.60,Pizza night
+2026-08-12,Expense,Bills,51.03,Water
+2026-08-13,Expense,Transport,116.38,Transit card top-up
+2026-08-15,Expense,Bills,54.99,Internet
+2026-08-16,Expense,Groceries,265.83,Weekly groceries
+2026-08-17,Expense,Eating out,31.66,Coffee
+2026-08-20,Expense,Bills,38.90,Phone
+2026-08-21,Expense,Fun,71.24,Streaming subscription
+2026-08-22,Expense,Transport,35.96,Fuel
+2026-08-22,Expense,Health,80.27,Pharmacy
+2026-08-23,Expense,Groceries,315.08,Farmers market
+2026-08-23,Expense,Eating out,69.63,Coffee
+2026-08-25,Expense,Other,132.59,Haircut
+2026-08-30,Expense,Groceries,273.65,Supermarket
+2026-09-01,Income,Salary,5200.00,Monthly salary
+2026-09-02,Expense,Groceries,157.82,Bakery
+2026-09-03,Expense,Rent,1750.00,Rent
+2026-09-04,Expense,Transport,35.47,Fuel
+2026-09-05,Expense,Eating out,23.71,Dinner out
+2026-09-08,Expense,Fun,63.38,Book
+2026-09-09,Expense,Groceries,252.46,Bakery
+2026-09-10,Expense,Bills,116.37,Electricity
+2026-09-11,Expense,Eating out,40.27,Pizza night
+2026-09-12,Expense,Bills,44.84,Water
+2026-09-13,Expense,Transport,117.17,Transit card top-up
+2026-09-15,Expense,Bills,54.99,Internet
+2026-09-16,Expense,Groceries,185.70,Farmers market
+2026-09-17,Expense,Eating out,65.59,Pizza night
+2026-09-18,Income,Side income,767.02,Freelance work
+2026-09-20,Expense,Bills,38.90,Phone
+2026-09-21,Expense,Fun,70.78,Streaming subscription
+2026-09-22,Expense,Transport,43.92,Fuel
+2026-09-22,Expense,Health,101.95,Dentist
+2026-09-23,Expense,Groceries,217.72,Bakery
+2026-09-23,Expense,Eating out,68.34,Lunch with colleagues
+2026-09-30,Expense,Groceries,288.31,Farmers market
+2026-10-01,Income,Salary,5200.00,Monthly salary
+2026-10-02,Expense,Groceries,172.38,Bakery
+2026-10-03,Expense,Rent,1750.00,Rent
+2026-10-04,Expense,Transport,59.34,Fuel
+2026-10-05,Expense,Eating out,53.82,Coffee
+2026-10-08,Expense,Fun,37.57,Streaming subscription
+2026-10-09,Expense,Groceries,164.24,Bakery
+2026-10-10,Expense,Bills,95.54,Electricity
+2026-10-11,Expense,Eating out,84.36,Dinner out
+2026-10-12,Expense,Bills,58.34,Water
+2026-10-13,Expense,Transport,57.90,Fuel
+2026-10-15,Expense,Bills,54.99,Internet
+2026-10-16,Expense,Groceries,211.23,Supermarket
+2026-10-17,Expense,Eating out,100.85,Lunch with colleagues
+2026-10-20,Expense,Bills,38.90,Phone
+2026-10-21,Expense,Fun,37.80,Concert tickets
+2026-10-22,Expense,Transport,57.76,Transit card top-up
+2026-10-22,Expense,Health,129.84,Pharmacy
+2026-10-23,Expense,Groceries,144.77,Supermarket
+2026-10-23,Expense,Eating out,43.37,Coffee
+2026-10-30,Expense,Groceries,237.06,Bakery
+2026-11-01,Income,Salary,5200.00,Monthly salary
+2026-11-02,Expense,Groceries,246.65,Bakery
+2026-11-03,Expense,Rent,1750.00,Rent
+2026-11-04,Expense,Transport,103.46,Transit card top-up
+2026-11-05,Expense,Eating out,108.04,Coffee
+2026-11-08,Expense,Fun,76.61,Cinema
+2026-11-09,Expense,Groceries,183.95,Farmers market
+2026-11-10,Expense,Bills,171.96,Electricity
+2026-11-11,Expense,Eating out,76.42,Pizza night
+2026-11-12,Expense,Bills,44.11,Water
+2026-11-13,Expense,Transport,46.25,Taxi
+2026-11-15,Expense,Bills,54.99,Internet
+2026-11-16,Expense,Groceries,163.33,Bakery
+2026-11-17,Expense,Eating out,47.49,Coffee
+2026-11-20,Expense,Bills,38.90,Phone
+2026-11-21,Expense,Fun,60.54,Concert tickets
+2026-11-22,Expense,Transport,108.96,Transit card top-up
+2026-11-23,Expense,Groceries,243.61,Weekly groceries
+2026-11-23,Expense,Eating out,58.02,Lunch with colleagues
+2026-11-25,Expense,Other,118.15,Gift
