@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:"
+    />
+    <title>Toplu Fotoğraf</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Sol: kurallar -->
+      <aside class="rules">
+        <h1 class="panel-title">Kurallar</h1>
+
+        <label class="field">
+          <span class="label">Ad şablonu</span>
+          <input id="template" type="text" spellcheck="false" />
+        </label>
+        <div id="tokens" class="tokens"></div>
+        <p class="hint">Örnek: <span id="example" class="example"></span></p>
+
+        <label class="field">
+          <span class="label">Klasörler</span>
+          <select id="grouping"></select>
+        </label>
+
+        <label class="field">
+          <span class="label">En uzun kenar</span>
+          <select id="max-size"></select>
+        </label>
+
+        <label class="field">
+          <span class="label">Kalite <output id="quality-value"></output></span>
+          <input id="quality" type="range" min="40" max="100" step="1" />
+          <span class="hint">JPEG ve WebP dosyaları için</span>
+        </label>
+
+        <label class="check">
+          <input id="keep-metadata" type="checkbox" />
+          <span>Konum ve kamera bilgilerini koru</span>
+        </label>
+
+        <div class="field">
+          <span class="label">Çıktı klasörü</span>
+          <div class="output-row">
+            <span id="output-dir" class="output-dir">Seçilmedi</span>
+            <button id="btn-output" type="button">Seç…</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Sağ: bırakma alanı ve önizleme listesi -->
+      <main id="drop-target" class="photos">
+        <section id="empty" class="drop-zone">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 5h16v14H4z M4 15l4-4 3 3 4-5 5 6" />
+          </svg>
+          <p class="drop-title">Fotoğrafları ya da klasörleri buraya bırakın</p>
+          <p class="hint">JPEG, PNG, WebP ve TIFF · Alt klasörlere de bakılır</p>
+          <button id="btn-pick-empty" type="button">Dosya seç…</button>
+        </section>
+
+        <section id="list" class="list" hidden>
+          <header class="list-header">
+            <p id="summary" class="summary"></p>
+            <button id="btn-add" type="button">Ekle…</button>
+            <button id="btn-clear" type="button">Temizle</button>
+          </header>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th class="col-thumb"></th>
+                  <th>Dosya</th>
+                  <th>Çekim tarihi</th>
+                  <th>Yeni adı</th>
+                  <th class="col-remove"></th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <div class="drop-overlay" aria-hidden="true">Bırakın, listeye eklensin</div>
+      </main>
+    </div>
+
+    <!-- Alt şerit: durum, ilerleme, düğmeler -->
+    <footer class="action-bar">
+      <div class="status">
+        <span id="status-text"></span>
+        <progress id="progress" max="1" value="0" hidden></progress>
+      </div>
+      <button id="btn-cancel" type="button" hidden>İptal</button>
+      <button id="btn-start" type="button" class="primary" disabled>Başlat</button>
+    </footer>
+
+    <!-- İş bitince açılan özet -->
+    <dialog id="result" class="result">
+      <h2 id="result-title"></h2>
+      <dl class="result-grid">
+        <dt>İşlenen</dt>
+        <dd id="result-processed"></dd>
+        <dt>Hatalı</dt>
+        <dd id="result-failed"></dd>
+        <dt>Toplam boyut</dt>
+        <dd id="result-size"></dd>
+        <dt>Süre</dt>
+        <dd id="result-time"></dd>
+      </dl>
+      <ul id="result-errors" class="result-errors"></ul>
+      <div class="result-actions">
+        <button id="btn-open-output" type="button">Klasörü aç</button>
+        <button id="btn-close-result" type="button" class="primary">Tamam</button>
+      </div>
+    </dialog>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
