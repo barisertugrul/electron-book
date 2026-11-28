@@ -9,8 +9,9 @@ import { describe, test } from 'node:test';
 
 import { buildName, groupFolder, normalizeRules, planOutputs, sanitizeFileName } from '../src/shared/plan.js';
 
-// Creates a test photo. We build the date in local time (months start at 0:
-// 10 = November), because the app also shows dates in local time.
+// Creates a test photo. We pass the month as on a calendar (11 = November);
+// Date counts months from 0, so we subtract 1. We build the date in local
+// time, because the app also shows dates in local time.
 function photo(name, year, month, day, hour = 12, minute = 0, second = 0) {
   return {
     path: `/photos/${name}`,

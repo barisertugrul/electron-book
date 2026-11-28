@@ -9,8 +9,9 @@ import { describe, test } from 'node:test';
 
 import { buildName, groupFolder, normalizeRules, planOutputs, sanitizeFileName } from '../src/shared/plan.js';
 
-// Test fotoğrafı üretir. Tarihi yerel saatle kuruyoruz (ay 0'dan başlar:
-// 10 = Kasım), çünkü uygulama da tarihleri yerel saatle gösterir.
+// Test fotoğrafı üretir. Ayı takvimdeki gibi veririz (11 = Kasım); Date ise
+// ayı 0'dan saydığı için 1 çıkarırız. Tarihi yerel saatle kuruyoruz, çünkü
+// uygulama da tarihleri yerel saatle gösterir.
 function photo(name, year, month, day, hour = 12, minute = 0, second = 0) {
   return {
     path: `/fotograflar/${name}`,

@@ -157,7 +157,11 @@ async function processPhotos(rulesInput) {
     });
     // Kullanıcı bu arada başka bir pencereye geçtiyse görev çubuğunda
     // simgemiz yanıp sönsün: "iş bitti, bana bak".
-    if (mainWindow && !mainWindow.isFocused()) mainWindow.flashFrame(true);
+    if (mainWindow && !mainWindow.isFocused()) {
+      mainWindow.flashFrame(true);
+    // Pencereye dönülünce yanıp sönme dursun.
+      mainWindow.once('focus', () => mainWindow?.flashFrame(false));
+    }
     return { ...result, elapsedMs: Date.now() - startedAt, outputDir };
   } finally {
     mainWindow?.setProgressBar(-1); // -1: çubuğu kaldır

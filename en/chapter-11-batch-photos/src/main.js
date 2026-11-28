@@ -157,7 +157,11 @@ async function processPhotos(rulesInput) {
     });
     // If the user switched to another window meanwhile, flash our taskbar
     // icon: "the job is done, look at me".
-    if (mainWindow && !mainWindow.isFocused()) mainWindow.flashFrame(true);
+    if (mainWindow && !mainWindow.isFocused()) {
+      mainWindow.flashFrame(true);
+    // Stop flashing once the user comes back to the window.
+      mainWindow.once('focus', () => mainWindow?.flashFrame(false));
+    }
     return { ...result, elapsedMs: Date.now() - startedAt, outputDir };
   } finally {
     mainWindow?.setProgressBar(-1); // -1: remove the bar
