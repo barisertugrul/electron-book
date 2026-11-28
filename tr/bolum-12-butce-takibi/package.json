@@ -1,0 +1,30 @@
+{
+  "name": "butce-takibi",
+  "productName": "Bütçe Takibi",
+  "version": "1.1.0",
+  "description": "Gelir ve giderleri kaydeden, aylık özet ve PDF rapor çıkaran bütçe uygulaması (Bölüm 12)",
+  "private": true,
+  "type": "module",
+  "main": ".vite/build/main.cjs",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "vitest run",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "ERT Yazılım",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^8.0.1",
+    "@electron-forge/maker-zip": "^8.0.1",
+    "@electron-forge/plugin-vite": "^8.0.1",
+    "@vitejs/plugin-react": "^6.3.0",
+    "electron": "45.5.0",
+    "vite": "^8.4.0",
+    "vitest": "^5.1.2"
+  }
+}

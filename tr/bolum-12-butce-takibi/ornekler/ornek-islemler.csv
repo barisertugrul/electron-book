@@ -1,0 +1,237 @@
+﻿Tarih;Tür;Kategori;Tutar;Not
+2026-01-01;Gelir;Maaş;45000,00;Aylık maaş
+2026-01-02;Gider;Market;3046,89;Semt pazarı
+2026-01-03;Gider;Kira;15000,00;Kira
+2026-01-04;Gider;Ulaşım;939,36;Taksi
+2026-01-05;Gider;Yeme-içme;957,33;Akşam yemeği
+2026-01-08;Gider;Eğlence;280,53;Konser bileti
+2026-01-09;Gider;Market;2755,55;Semt pazarı
+2026-01-10;Gider;Faturalar;1657,00;Elektrik
+2026-01-11;Gider;Yeme-içme;578,65;Kahve
+2026-01-12;Gider;Faturalar;479,95;Su
+2026-01-13;Gider;Ulaşım;625,70;Ulaşım kartı yükleme
+2026-01-15;Gider;Faturalar;549,90;İnternet
+2026-01-16;Gider;Market;2338,01;Haftalık market
+2026-01-17;Gider;Yeme-içme;949,50;İş arkadaşlarıyla öğle yemeği
+2026-01-20;Gider;Faturalar;389,00;Telefon
+2026-01-21;Gider;Eğlence;654,69;Sinema
+2026-01-22;Gider;Ulaşım;394,11;Taksi
+2026-01-23;Gider;Market;1488,31;Haftalık market
+2026-01-23;Gider;Yeme-içme;877,80;Akşam yemeği
+2026-01-25;Gider;Diğer;881,20;Berber
+2026-01-30;Gider;Market;1917,25;Fırın
+2026-02-01;Gelir;Maaş;45000,00;Aylık maaş
+2026-02-02;Gider;Market;1404,96;Semt pazarı
+2026-02-03;Gider;Kira;15000,00;Kira
+2026-02-04;Gider;Ulaşım;1052,34;Benzin
+2026-02-05;Gider;Yeme-içme;166,72;Kahve
+2026-02-08;Gider;Eğlence;609,27;Dizi aboneliği
+2026-02-09;Gider;Market;2399,26;Semt pazarı
+2026-02-10;Gider;Faturalar;1252,80;Elektrik
+2026-02-11;Gider;Yeme-içme;174,39;İş arkadaşlarıyla öğle yemeği
+2026-02-12;Gider;Faturalar;479,15;Su
+2026-02-13;Gider;Ulaşım;1126,02;Ulaşım kartı yükleme
+2026-02-15;Gider;Faturalar;549,90;İnternet
+2026-02-16;Gider;Market;2663,63;Fırın
+2026-02-17;Gider;Yeme-içme;1040,23;İş arkadaşlarıyla öğle yemeği
+2026-02-20;Gider;Faturalar;389,00;Telefon
+2026-02-21;Gider;Eğlence;625,53;Kitap
+2026-02-22;Gider;Ulaşım;1061,81;Ulaşım kartı yükleme
+2026-02-23;Gider;Market;2863,01;Haftalık market
+2026-02-23;Gider;Yeme-içme;459,20;Pizza akşamı
+2026-02-25;Gider;Diğer;586,78;Hediye
+2026-03-01;Gelir;Maaş;45000,00;Aylık maaş
+2026-03-02;Gider;Market;2865,50;Haftalık market
+2026-03-03;Gider;Kira;15000,00;Kira
+2026-03-04;Gider;Ulaşım;641,74;Benzin
+2026-03-05;Gider;Yeme-içme;560,56;Akşam yemeği
+2026-03-08;Gider;Eğlence;430,51;Kitap
+2026-03-09;Gider;Market;2159,68;Haftalık market
+2026-03-10;Gider;Faturalar;2168,87;Elektrik
+2026-03-11;Gider;Yeme-içme;312,39;Pizza akşamı
+2026-03-12;Gider;Faturalar;409,79;Su
+2026-03-13;Gider;Ulaşım;866,71;Benzin
+2026-03-15;Gider;Faturalar;549,90;İnternet
+2026-03-16;Gider;Market;1446,70;Haftalık market
+2026-03-17;Gider;Yeme-içme;653,36;Akşam yemeği
+2026-03-18;Gelir;Ek gelir;8500,37;Serbest çalışma
+2026-03-20;Gider;Faturalar;389,00;Telefon
+2026-03-21;Gider;Eğlence;402,51;Dizi aboneliği
+2026-03-22;Gider;Ulaşım;320,30;Taksi
+2026-03-22;Gider;Sağlık;504,77;Eczane
+2026-03-23;Gider;Market;2040,22;Semt pazarı
+2026-03-23;Gider;Yeme-içme;747,26;Kahve
+2026-03-30;Gider;Market;3189,63;Süpermarket
+2026-04-01;Gelir;Maaş;45000,00;Aylık maaş
+2026-04-02;Gider;Market;3116,03;Semt pazarı
+2026-04-03;Gider;Kira;15000,00;Kira
+2026-04-04;Gider;Ulaşım;1080,26;Benzin
+2026-04-05;Gider;Yeme-içme;475,46;Pizza akşamı
+2026-04-08;Gider;Eğlence;626,81;Kitap
+2026-04-09;Gider;Market;2471,64;Haftalık market
+2026-04-10;Gider;Faturalar;1138,31;Elektrik
+2026-04-11;Gider;Yeme-içme;632,61;İş arkadaşlarıyla öğle yemeği
+2026-04-12;Gider;Faturalar;374,63;Su
+2026-04-13;Gider;Ulaşım;415,25;Benzin
+2026-04-15;Gider;Faturalar;549,90;İnternet
+2026-04-16;Gider;Market;1572,78;Fırın
+2026-04-17;Gider;Yeme-içme;236,29;Pizza akşamı
+2026-04-20;Gider;Faturalar;389,00;Telefon
+2026-04-21;Gider;Eğlence;566,54;Konser bileti
+2026-04-22;Gider;Ulaşım;360,91;Taksi
+2026-04-22;Gider;Sağlık;1433,24;Diş hekimi
+2026-04-23;Gider;Market;2605,14;Süpermarket
+2026-04-23;Gider;Yeme-içme;575,77;Akşam yemeği
+2026-04-25;Gider;Diğer;539,70;Hediye
+2026-04-30;Gider;Market;2804,64;Semt pazarı
+2026-05-01;Gelir;Maaş;45000,00;Aylık maaş
+2026-05-02;Gider;Market;3183,35;Semt pazarı
+2026-05-03;Gider;Kira;15000,00;Kira
+2026-05-04;Gider;Ulaşım;990,75;Benzin
+2026-05-05;Gider;Yeme-içme;180,24;İş arkadaşlarıyla öğle yemeği
+2026-05-08;Gider;Eğlence;772,66;Sinema
+2026-05-09;Gider;Market;1816,14;Semt pazarı
+2026-05-10;Gider;Faturalar;937,38;Elektrik
+2026-05-11;Gider;Yeme-içme;321,49;Kahve
+2026-05-12;Gider;Faturalar;432,94;Su
+2026-05-13;Gider;Ulaşım;517,26;Taksi
+2026-05-15;Gider;Faturalar;549,90;İnternet
+2026-05-16;Gider;Market;1918,86;Semt pazarı
+2026-05-17;Gider;Yeme-içme;379,18;Akşam yemeği
+2026-05-20;Gider;Faturalar;389,00;Telefon
+2026-05-21;Gider;Eğlence;811,76;Sinema
+2026-05-22;Gider;Ulaşım;1145,42;Ulaşım kartı yükleme
+2026-05-22;Gider;Sağlık;644,74;Eczane
+2026-05-23;Gider;Market;2993,23;Süpermarket
+2026-05-23;Gider;Yeme-içme;398,78;İş arkadaşlarıyla öğle yemeği
+2026-05-30;Gider;Market;1515,47;Semt pazarı
+2026-06-01;Gelir;Maaş;45000,00;Aylık maaş
+2026-06-02;Gider;Market;2082,40;Semt pazarı
+2026-06-03;Gider;Kira;15000,00;Kira
+2026-06-04;Gider;Ulaşım;1123,32;Benzin
+2026-06-05;Gider;Yeme-içme;694,01;Akşam yemeği
+2026-06-08;Gider;Eğlence;629,70;Dizi aboneliği
+2026-06-09;Gider;Market;2168,05;Semt pazarı
+2026-06-10;Gider;Faturalar;1211,51;Elektrik
+2026-06-11;Gider;Yeme-içme;932,39;Akşam yemeği
+2026-06-12;Gider;Faturalar;429,54;Su
+2026-06-13;Gider;Ulaşım;348,84;Ulaşım kartı yükleme
+2026-06-15;Gider;Faturalar;549,90;İnternet
+2026-06-16;Gider;Market;2698,02;Semt pazarı
+2026-06-17;Gider;Yeme-içme;973,28;İş arkadaşlarıyla öğle yemeği
+2026-06-18;Gelir;Ek gelir;4968,06;Serbest çalışma
+2026-06-20;Gider;Faturalar;389,00;Telefon
+2026-06-21;Gider;Eğlence;672,31;Kitap
+2026-06-22;Gider;Ulaşım;1101,45;Benzin
+2026-06-22;Gider;Sağlık;814,83;Diş hekimi
+2026-06-23;Gider;Market;2138,84;Süpermarket
+2026-06-23;Gider;Yeme-içme;524,45;Kahve
+2026-06-25;Gider;Diğer;1275,50;Berber
+2026-06-30;Gider;Market;2488,47;Fırın
+2026-07-01;Gelir;Maaş;52000,00;Aylık maaş
+2026-07-02;Gider;Market;1702,19;Haftalık market
+2026-07-03;Gider;Kira;17500,00;Kira
+2026-07-04;Gider;Ulaşım;431,14;Taksi
+2026-07-05;Gider;Yeme-içme;512,11;Pizza akşamı
+2026-07-08;Gider;Eğlence;722,31;Kitap
+2026-07-09;Gider;Market;1734,31;Semt pazarı
+2026-07-10;Gider;Faturalar;1022,91;Elektrik
+2026-07-11;Gider;Yeme-içme;933,90;Pizza akşamı
+2026-07-12;Gider;Faturalar;390,69;Su
+2026-07-13;Gider;Ulaşım;972,65;Benzin
+2026-07-15;Gider;Faturalar;549,90;İnternet
+2026-07-16;Gider;Market;1537,21;Haftalık market
+2026-07-17;Gider;Yeme-içme;538,77;İş arkadaşlarıyla öğle yemeği
+2026-07-20;Gider;Faturalar;389,00;Telefon
+2026-07-21;Gider;Eğlence;472,94;Sinema
+2026-07-22;Gider;Ulaşım;642,43;Taksi
+2026-07-22;Gider;Sağlık;875,95;Eczane
+2026-07-23;Gider;Market;2636,10;Haftalık market
+2026-07-23;Gider;Yeme-içme;192,74;İş arkadaşlarıyla öğle yemeği
+2026-07-25;Gider;Diğer;774,79;Berber
+2026-07-30;Gider;Market;1714,10;Haftalık market
+2026-08-01;Gelir;Maaş;52000,00;Aylık maaş
+2026-08-02;Gider;Market;2934,35;Süpermarket
+2026-08-03;Gider;Kira;17500,00;Kira
+2026-08-04;Gider;Ulaşım;822,52;Taksi
+2026-08-05;Gider;Yeme-içme;435,98;Kahve
+2026-08-08;Gider;Eğlence;274,57;Kitap
+2026-08-09;Gider;Market;2982,36;Haftalık market
+2026-08-10;Gider;Faturalar;965,24;Elektrik
+2026-08-11;Gider;Yeme-içme;335,98;Pizza akşamı
+2026-08-12;Gider;Faturalar;510,31;Su
+2026-08-13;Gider;Ulaşım;1163,79;Ulaşım kartı yükleme
+2026-08-15;Gider;Faturalar;549,90;İnternet
+2026-08-16;Gider;Market;2658,26;Haftalık market
+2026-08-17;Gider;Yeme-içme;316,63;Kahve
+2026-08-20;Gider;Faturalar;389,00;Telefon
+2026-08-21;Gider;Eğlence;712,39;Dizi aboneliği
+2026-08-22;Gider;Ulaşım;359,55;Benzin
+2026-08-22;Gider;Sağlık;802,71;Eczane
+2026-08-23;Gider;Market;3150,81;Semt pazarı
+2026-08-23;Gider;Yeme-içme;696,31;Kahve
+2026-08-25;Gider;Diğer;1325,85;Berber
+2026-08-30;Gider;Market;2736,51;Süpermarket
+2026-09-01;Gelir;Maaş;52000,00;Aylık maaş
+2026-09-02;Gider;Market;1578,15;Fırın
+2026-09-03;Gider;Kira;17500,00;Kira
+2026-09-04;Gider;Ulaşım;354,72;Benzin
+2026-09-05;Gider;Yeme-içme;237,06;Akşam yemeği
+2026-09-08;Gider;Eğlence;633,80;Kitap
+2026-09-09;Gider;Market;2524,63;Fırın
+2026-09-10;Gider;Faturalar;1163,74;Elektrik
+2026-09-11;Gider;Yeme-içme;402,68;Pizza akşamı
+2026-09-12;Gider;Faturalar;448,41;Su
+2026-09-13;Gider;Ulaşım;1171,73;Ulaşım kartı yükleme
+2026-09-15;Gider;Faturalar;549,90;İnternet
+2026-09-16;Gider;Market;1857,04;Semt pazarı
+2026-09-17;Gider;Yeme-içme;655,94;Pizza akşamı
+2026-09-18;Gelir;Ek gelir;7670,19;Serbest çalışma
+2026-09-20;Gider;Faturalar;389,00;Telefon
+2026-09-21;Gider;Eğlence;707,83;Dizi aboneliği
+2026-09-22;Gider;Ulaşım;439,21;Benzin
+2026-09-22;Gider;Sağlık;1019,54;Diş hekimi
+2026-09-23;Gider;Market;2177,22;Fırın
+2026-09-23;Gider;Yeme-içme;683,38;İş arkadaşlarıyla öğle yemeği
+2026-09-30;Gider;Market;2883,13;Semt pazarı
+2026-10-01;Gelir;Maaş;52000,00;Aylık maaş
+2026-10-02;Gider;Market;1723,75;Fırın
+2026-10-03;Gider;Kira;17500,00;Kira
+2026-10-04;Gider;Ulaşım;593,37;Benzin
+2026-10-05;Gider;Yeme-içme;538,24;Kahve
+2026-10-08;Gider;Eğlence;375,73;Dizi aboneliği
+2026-10-09;Gider;Market;1642,38;Fırın
+2026-10-10;Gider;Faturalar;955,44;Elektrik
+2026-10-11;Gider;Yeme-içme;843,58;Akşam yemeği
+2026-10-12;Gider;Faturalar;583,43;Su
+2026-10-13;Gider;Ulaşım;578,99;Benzin
+2026-10-15;Gider;Faturalar;549,90;İnternet
+2026-10-16;Gider;Market;2112,30;Süpermarket
+2026-10-17;Gider;Yeme-içme;1008,46;İş arkadaşlarıyla öğle yemeği
+2026-10-20;Gider;Faturalar;389,00;Telefon
+2026-10-21;Gider;Eğlence;378,01;Konser bileti
+2026-10-22;Gider;Ulaşım;577,64;Ulaşım kartı yükleme
+2026-10-22;Gider;Sağlık;1298,37;Eczane
+2026-10-23;Gider;Market;1447,70;Süpermarket
+2026-10-23;Gider;Yeme-içme;433,70;Kahve
+2026-10-30;Gider;Market;2370,60;Fırın
+2026-11-01;Gelir;Maaş;52000,00;Aylık maaş
+2026-11-02;Gider;Market;2466,48;Fırın
+2026-11-03;Gider;Kira;17500,00;Kira
+2026-11-04;Gider;Ulaşım;1034,56;Ulaşım kartı yükleme
+2026-11-05;Gider;Yeme-içme;1080,44;Kahve
+2026-11-08;Gider;Eğlence;766,13;Sinema
+2026-11-09;Gider;Market;1839,52;Semt pazarı
+2026-11-10;Gider;Faturalar;1719,59;Elektrik
+2026-11-11;Gider;Yeme-içme;764,19;Pizza akşamı
+2026-11-12;Gider;Faturalar;441,10;Su
+2026-11-13;Gider;Ulaşım;462,51;Taksi
+2026-11-15;Gider;Faturalar;549,90;İnternet
+2026-11-16;Gider;Market;1633,26;Fırın
+2026-11-17;Gider;Yeme-içme;474,86;Kahve
+2026-11-20;Gider;Faturalar;389,00;Telefon
+2026-11-21;Gider;Eğlence;605,39;Konser bileti
+2026-11-22;Gider;Ulaşım;1089,64;Ulaşım kartı yükleme
+2026-11-23;Gider;Market;2436,09;Haftalık market
+2026-11-23;Gider;Yeme-içme;580,22;İş arkadaşlarıyla öğle yemeği
+2026-11-25;Gider;Diğer;1181,49;Hediye
